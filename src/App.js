@@ -1,26 +1,52 @@
-import React from 'react';
-import logo from './logo.svg';
+import React from "react";
+import Cardarray from "./Cardarray";
+import Search from "./Search";
+//import { names } from './names';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
+class App extends React.Component{
+    constructor(){
+        super()
+        this.state={
+            names:[],
+            searchfield:""
+        }
+        this.onsearchchange=this.onsearchchange.bind(this)
+    }
+    componentDidMount(){
+        fetch('https://jsonplaceholder.typicode.com/users')
+        .then((res)=>res.json())
+        .then((users)=>
+            this.setState({
+                names:users
+            })
+        )
+    }
+    onsearchchange(event){
+        this.setState({
+            searchfield:event.target.value
+        })
+    }
+    render(){
+        const filterrobots=this.state.names.filter(robots=>{
+        return robots.name.toLowerCase().includes(this.state.searchfield.toLowerCase())
+        })
+        if(this.state.names.length === 0){
+            return <h2>loading....  please wait</h2>
+        }
+        else{
+    return (
+        <div className="total">
+            <div className="tc">
+                <h1 className="ma0" style={{fontFamily:"sega logo font"}}>ROBO SEARCH</h1>
+                <Search searchChange={this.onsearchchange} />  
+                <hr></hr>
+            </div>
+            <Cardarray names={filterrobots} />
+        </div>
+
+    );
+}}
+}
 export default App;
