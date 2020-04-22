@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Deephacks619.github.io/robo-friends-app/static/css/main.0af4e45f.chunk.css",
+    "main.js": "/Deephacks619.github.io/robo-friends-app/static/js/main.42696461.chunk.js",
+    "main.js.map": "/Deephacks619.github.io/robo-friends-app/static/js/main.42696461.chunk.js.map",
+    "runtime-main.js": "/Deephacks619.github.io/robo-friends-app/static/js/runtime-main.a8e7e9c5.js",
+    "runtime-main.js.map": "/Deephacks619.github.io/robo-friends-app/static/js/runtime-main.a8e7e9c5.js.map",
+    "static/css/2.eb45ad44.chunk.css": "/Deephacks619.github.io/robo-friends-app/static/css/2.eb45ad44.chunk.css",
+    "static/js/2.b22ba672.chunk.js": "/Deephacks619.github.io/robo-friends-app/static/js/2.b22ba672.chunk.js",
+    "static/js/2.b22ba672.chunk.js.map": "/Deephacks619.github.io/robo-friends-app/static/js/2.b22ba672.chunk.js.map",
+    "index.html": "/Deephacks619.github.io/robo-friends-app/index.html",
+    "precache-manifest.df21f317d8e2118c94c3987e2dee4505.js": "/Deephacks619.github.io/robo-friends-app/precache-manifest.df21f317d8e2118c94c3987e2dee4505.js",
+    "service-worker.js": "/Deephacks619.github.io/robo-friends-app/service-worker.js",
+    "static/css/2.eb45ad44.chunk.css.map": "/Deephacks619.github.io/robo-friends-app/static/css/2.eb45ad44.chunk.css.map",
+    "static/css/main.0af4e45f.chunk.css.map": "/Deephacks619.github.io/robo-friends-app/static/css/main.0af4e45f.chunk.css.map",
+    "static/js/2.b22ba672.chunk.js.LICENSE.txt": "/Deephacks619.github.io/robo-friends-app/static/js/2.b22ba672.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Deephacks619.github.io/robo-friends-app/static/media/SEGA.12a3db8b.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a8e7e9c5.js",
+    "static/css/2.eb45ad44.chunk.css",
+    "static/js/2.b22ba672.chunk.js",
+    "static/css/main.0af4e45f.chunk.css",
+    "static/js/main.42696461.chunk.js"
+  ]
+}
